@@ -1,0 +1,18 @@
+<h1>CUSTOM<span>DATE</span>PICKER</h1>
+
+<div class="date-picker" (click)="openCalendar($event)">
+    <img class="date-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTijtjH-UkifX_W-g5J1egLzkpN1DZGY7qxvFdriyhUQ_UelgT-">
+    <div class="year-box">
+            <div class="selected-date">
+            </div>
+    </div>
+    <div class="dates">
+        <div class="month">
+            <div class="arrows prev-mth"(click)="goToPrevMonth($event)">&lt;</div>
+            <div class="mth"></div>
+            <div class="arrows next-mth" (click)="goToNextMonth($event)">&gt;</div>
+        </div>
+        <div class="days-names"></div>
+        <div class="days"></div>
+    </div>
+</div>

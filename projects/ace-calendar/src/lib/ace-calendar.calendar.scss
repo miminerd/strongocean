@@ -1,0 +1,119 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: #FFCE00;
+	font-family: 'Saira', Arial, Helvetica, sans-serif;
+}
+h1 {
+	margin: 30px 0px;
+	color: #313131;
+	font-size: 42px;
+	font-weight: 900;
+	text-align: center;
+}
+h1 span {
+	font-weight: 300;
+}
+.date-picker {
+	position: relative;
+	width: 100%;
+	max-width: 320px;
+	height: auto;
+	background-color: #FFF;
+	margin: 30px auto;
+	box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+	user-select: none;
+	text-align: center;
+	padding: 15px;
+}
+.date-picker .selected-date {
+	color: #313131;
+	font-size: 28px;
+}
+.date-picker .dates {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	margin-bottom: 30px;
+	background-color: #FFF;
+	border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.date-picker .dates.active {
+	display: block;
+	margin-top: 5px;
+}
+.date-picker .dates .month {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 55px;
+    background: #38d7e7;
+    margin: 12px;
+    border-radius: 30px;
+}
+.date-picker .dates .month .arrows {
+	width: 35px;
+	height: 30px;
+	color: #313131;
+	font-size: 20px;
+}
+.date-picker .dates .month .arrows:hover {
+	color: #f9f7f1;
+}
+
+.date-picker .dates .month .arrows:active {
+	color: #f9f7f1;
+}
+.date-picker .dates .days {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	height: auto;
+    grid-row-gap: 38px;
+	grid-column-gap: 7px;
+	padding-bottom: 4px;
+}
+.date-picker .dates .days .day.selected {
+	background-color: #00CA85;
+}
+.date-picker .days-names {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	height: 40px;
+	color: #ee316b;
+	font-weight: 700;
+}
+.mth{
+	font-weight: 600;
+    letter-spacing: 3px;
+}
+.date-picker .years {
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+	width: 100%;
+	height: 300px;
+	position: absolute;
+	z-index: 10;
+	margin-bottom: 30px;
+}
+.date-picker .years.inactive {
+	display: none;
+}
+.date-picker .years.active {
+	display: grid;
+}
+.mouse {
+	background: yellow;
+}
+.date-img{
+	width: 14%;
+	float: left;
+}
