@@ -12,5 +12,21 @@ app.get('/*', function(req,res) {
 res.sendFile(path.join(__dirname+'/dist/calendar/index.html'));
 });
 
-// Start the app by listening on the default Heroku port
-app.listen(process.env.PORT || 8080);
+app.get('/', function(request, response) {
+  response.send('Hello World!')
+})
+
+// production error handler
+// no stacktraces leaked to user
+app.use(function(err, req, res, next) {
+  res.status(err.status || 500);
+  res.json({'errors': {
+    message: err.message,
+    error: {}
+  }});
+});
+
+// finally, let's start our server...
+var server = app.listen( process.env.PORT || 8080, function(){
+  console.log('Listening on port ' + server.address().port);
+});
