@@ -6,27 +6,27 @@ Reusable datepicker component for Angular apps [demo](https://angular-datepicker
 
 This project can be installed via npm 
 
-npm install ace-calendar --save
+`npm install ace-calendar --save`
 
 Or via yarn:
 
-yarn add ace-calendar
+`yarn add ace-calendar`
 
 ## Usage
 
 How to use the datepicker component;\
 integrate the component in your view (html) by simply adding this balise\
 
-<lib-ace-calendar (onDatePicked)="getDate($event)"></lib-ace-calendar>
+`<lib-ace-calendar (onDatePicked)="getDate($event)"></lib-ace-calendar>`
 
 You can use onDatePicked event handler which fires each time you select a date. 
 
 you can access the value of the selected date in your component.ts via the method:
 
-  public getDate(date: any): void {
+  `public getDate(date: any): void {
     console.log('Picked date: ', date);
     return date;
-  }
+  }`
 
 [github repo](https://github.com/miminerd/strongocean).
 
