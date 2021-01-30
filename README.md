@@ -28,6 +28,35 @@ you can access the value of the selected date in your component.ts via the metho
     return date;
   }`
 
+Don't forget to add the ace-calendar module in your app.module.ts
+<pre>
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { AceCalendarModule } from 'ace-calendar';
+ 
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+ 
+@NgModule({ 
+declarations: [ 
+  AppComponent
+], 
+imports: [ 
+  BrowserModule, 
+  AppRoutingModule, 
+  AceCalendarModule
+], 
+providers: [], 
+bootstrap: [AppComponent]
+})
+export class AppModule { }
+</pre>
+
+## Author
+[Juda Buchahda](https://juda-landing-cv.herokuapp.com/home)
+-[Github](https://github.com/miminerd)
+
+
 [github repo](https://github.com/miminerd/strongocean).
 
 ## Contribution
