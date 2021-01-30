@@ -1,24 +1,34 @@
-# AceCalendar
+# Angular Date Picker Component
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.13.
+Reusable datepicker component for Angular apps [demo](https://angular-datepicker.herokuapp.com/).
 
-## Code scaffolding
+## Installation
 
-Run `ng generate component component-name --project ace-calendar` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ace-calendar`.
-> Note: Don't forget to add `--project ace-calendar` or else it will be added to the default project in your `angular.json` file. 
+This project can be installed via npm 
 
-## Build
+npm install ace-calendar --save
 
-Run `ng build ace-calendar` to build the project. The build artifacts will be stored in the `dist/` directory.
+Or via yarn:
 
-## Publishing
+yarn add ace-calendar
 
-After building your library with `ng build ace-calendar`, go to the dist folder `cd dist/ace-calendar` and run `npm publish`.
+## Usage
 
-## Running unit tests
+How to use the datepicker component;\
+integrate the component in your view (html) by simply adding this balise\
 
-Run `ng test ace-calendar` to execute the unit tests via [Karma](https://karma-runner.github.io).
+<lib-ace-calendar (onDatePicked)="getDate($event)"></lib-ace-calendar>
 
-## Further help
+You can use onDatePicked event handler which fires each time you select a date. 
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+you can access the value of the selected date in your component.ts via the method:
+
+  public getDate(date: any): void {
+    console.log('Picked date: ', date);
+    return date;
+  }
+
+[github repo](https://github.com/miminerd/strongocean).
+
+## Contribution
+I welcome issues and pull requests on https://github.com/miminerd/strongocean

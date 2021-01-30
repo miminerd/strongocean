@@ -1,6 +1,6 @@
 {
   "name": "ace-calendar",
-  "version": "0.0.1",
+  "version": "0.0.8",
   "peerDependencies": {
     "@angular/common": "^8.2.13",
     "@angular/core": "^8.2.13"
@@ -17,5 +17,17 @@
   "sideEffects": false,
   "dependencies": {
     "tslib": "^1.9.0"
-  }
+  },
+  "keywords": [
+    "angular",
+    "datepicker",
+    "component",
+    "react",
+    "standalone",
+    "button",
+    "calendar"
+  ],
+  "author": "Juda Buchahda <jouda.bouchahda@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/miminerd/strongocean"
 }

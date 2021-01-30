@@ -10,6 +10,18 @@
     "e2e": "ng e2e",
     "postinstall": "ng build --prod && node server.js"
   },
+  "keywords": [
+    "angular",
+    "social",
+    "login",
+    "facebook",
+    "google",
+    "linkedin",
+    "buttons"
+  ],
+  "author": "Juda Buchahda <jouda.bouchahda@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/miminerd/strongocean",
   "private": true,
   "dependencies": {
     "@angular/animations": "^8.2.14",
