@@ -52,12 +52,11 @@ bootstrap: [AppComponent]
 export class AppModule { }
 </pre>
 
-## Author
-[Juda Buchahda](https://juda-landing-cv.herokuapp.com/home)
--[Github](https://github.com/miminerd)
-
-
 [github repo](https://github.com/miminerd/strongocean).
 
 ## Contribution
 I welcome issues and pull requests on https://github.com/miminerd/strongocean
+
+## Author
+[Juda Buchahda](https://juda-landing-cv.herokuapp.com/home)
+-[Github](https://github.com/miminerd)
