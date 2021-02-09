@@ -1,6 +1,7 @@
 # Angular Date Picker Component
 
 Reusable datepicker component for Angular apps [demo](https://angular-datepicker.herokuapp.com/).
+![Alt text](/img/date.PNG?raw=true "datepicker")
 
 ## Installation
 
@@ -51,8 +52,6 @@ bootstrap: [AppComponent]
 })
 export class AppModule { }
 </pre>
-
-[github repo](https://github.com/miminerd/strongocean).
 
 ## Contribution
 I welcome issues and pull requests on https://github.com/miminerd/strongocean
